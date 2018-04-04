@@ -14,3 +14,8 @@ def index(request):
 def education(request):
 	context = {"navbar": "education"}
 	return render(request, "application/education.html", context)
+
+
+def experience(request):
+	context = {"navbar": "experience"}
+	return render(request, "application/experience.html", context)

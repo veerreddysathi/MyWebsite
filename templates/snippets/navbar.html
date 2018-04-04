@@ -11,9 +11,9 @@
                 </div>
 				<div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="{% if navbar == 'profile' %}active{% endif %}"><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                    <li class="{% if navbar == 'profile' %}active{% endif %}"><a href="/#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
                     <li class="{% if navbar == 'education' %}active{% endif %}"><a href="/education/"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Education</a></li>
-					<li><a href="/experience/"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Experience</a></li>
+					<li class="{% if navbar == 'experience' %}active{% endif %}"><a href="/experience/"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Experience</a></li>
                     <li><a href="aboutus.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Skills</a></li>
                     <li><a href="aboutus.html"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Certifications</a></li>
                     <li class="dropdown">

@@ -20,6 +20,10 @@ body{
 	width: 90%;
 }
 
+.breadcrumb > li > a {
+	color: #000000;
+}
+
 jumbotron > .jtron-title {
 	padding-right: 10%;
 }
@@ -27,3 +31,11 @@ jumbotron > .jtron-title {
 .footer-div {
 	background-color: #D3D3D3;
 }
+
+.nav-pills > li.active > a {
+       background-color: #000000 !important;
+     }
+
+.nav-pills > li > a  {
+       color: #000000;
+     }

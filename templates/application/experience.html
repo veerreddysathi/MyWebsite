@@ -1,0 +1,127 @@
+{% extends "base_template.html" %}
+
+{% block title %} Education | {{ block.super }} {% endblock title %}
+
+{% load static %}
+
+{% block content %}
+<style>
+ul {
+	list-style-type: square;
+    list-style-image: url("{% static '/img/arrow.png' %}");
+}
+</style>
+<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="jtron-title">Experience</h1>
+					</div>
+				</div>
+			</div>
+</div>
+<div class="container bcrumb content-container">
+	<div class="row">
+	<div class="col-xs-12 col-sm-9">
+	<div class="row">
+            <div class="col-xs-12">
+                <ol class="breadcrumb">
+					<li><a href="/#/">Home</a></li>
+					<li class="active">Experience</li>
+				</ol>
+            </div>
+    </div>
+    <div class="container content-container">
+		<div class="row row-content" id="opr">
+            <div class="media">
+                    <div class="col-xs-12 col-sm-4 col-sm-push-1">
+						<div class="media-left media-middle">
+							<a href="#">
+							<img class="media-object img-thumbnail logos"
+							src="{% static 'img/opr.jpg' %}" alt="Image Not Available">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5">
+						<div class="media-body">
+							<h2 class="media-heading"><strong>Back-End Developer</strong></h2>
+							<h3>One Planet Rating</h3>
+							<h4><strong>November, 2017 - Ongoing</strong></h4>
+							<p><strong>As a Back-End Developer at OPR, I am: </strong></p>
+							<ul>
+								<li>Responsible for developing new features for the OPR rating platform</li>
+								<li>Improve existing functionalities of the platform</li>
+								<li>Develop the <strong>Back-End API</strong> of OPR Rating platform for the Mobile Application using <strong>Python-Django REST Framework</strong></li>
+								<li>Assist with the <strong>Front-End/ Testing</strong> team if needed</li>
+							</ul>
+						</div>
+					</div>
+            </div>
+        </div>
+<hr style="width:50%">
+		<div class="row row-content" id="gaddr">
+            <div class="media">
+                    <div class="col-xs-12 col-sm-4 col-sm-push-1">
+						<div class="media-left media-middle">
+							<a href="#">
+							<img class="media-object img-thumbnail logos"
+							src="{% static 'img/gaddr.png' %}" alt="Image Not Available">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5">
+						<div class="media-body">
+							<h2 class="media-heading"><strong>Web Intern</strong></h2>
+							<h3>Gaddr Me</h3>
+							<h4><strong>March, 2017 - May, 2017</strong></h4>
+							<p>As an intern my role was:</p>
+							<ul>
+								<li>Investigate the available opensource resources that could be used for Gaddr platform</li>
+								<li>Develop a chatbot using <strong>Python</strong></li>
+								<li>At times, I was also required to assist with some <strong>Machine learning</strong> tasks related to facial detection, and recognition.</li>
+							</ul>
+						</div>
+					</div>
+            </div>
+		</div>
+<hr style="width:50%">
+		<div class="row row-content" id="softhouse">
+            <div class="media">
+                    <div class="col-xs-12 col-sm-4 col-sm-push-1">
+						<div class="media-left media-middle">
+							<a href="#">
+							<img class="media-object img-thumbnail logos"
+							src="{% static 'img/softhouse.jpg' %}" alt="Image Not Available">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5">
+						<div class="media-body">
+							<h2 class="media-heading"><strong>Software Craftsmanship Trainee</strong></h2>
+							<h3>Softhouse AB</h3>
+							<h4><strong>May, 2016 - June, 2016</strong></h4>
+							<p>As a Software Craftsmanship Trainee at Softhouse:</p>
+							<ul>
+								<li>I was part of a SCRUM team of six members
+								<li>Responsible for developing an online exam application using <strong>HTML5, CSS3, Angular JS, Bootstrap, Java</strong>. The tool chain used during our project was <strong>Git Bash, NPM, Bower, WebStorm, Eclipse</strong></li>
+							</ul>
+						</div>
+					</div>
+            </div>
+        </div>
+<hr>
+    </div>
+	</div>
+	<!-- introducing the scrollspy with the affix plugin-->
+	<nav class="hidden-xs col-sm-3" id="myScrollspy">
+            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
+                <li><a href="#opr">One Planet Rating (2017-ongoing)</a></li>
+                <li><a href="#gaddr">Gaddr Me (2017)</a></li>
+                <li><a href="#softhouse">Softhouse AB (2016)</a></li>
+            </ul>
+    </nav>
+	
+	</div>
+	{% include "snippets/footer.html" %}
+</div>
+{% endblock %}
