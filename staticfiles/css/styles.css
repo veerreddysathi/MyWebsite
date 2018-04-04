@@ -1,0 +1,29 @@
+body{
+	background-color: #000000;
+}
+
+.logos {
+	width: 200px;
+	height: 200px;
+}
+
+.durations {
+	padding-top: 60px;
+	color: #FF611A;
+}
+
+.content-container {
+	background-color: #FFFFFF;
+}
+
+.bcrumb {
+	width: 90%;
+}
+
+jumbotron > .jtron-title {
+	padding-right: 10%;
+}
+
+.footer-div {
+	background-color: #D3D3D3;
+}

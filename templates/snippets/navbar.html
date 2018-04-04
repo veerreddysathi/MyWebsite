@@ -1,0 +1,56 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!--<div class="container">-->
+				<div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Veer Reddy</a>
+                </div>
+				<div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="{% if navbar == 'profile' %}active{% endif %}"><a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                    <li class="{% if navbar == 'education' %}active{% endif %}"><a href="/education/"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Education</a></li>
+					<li><a href="/experience/"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Experience</a></li>
+                    <li><a href="aboutus.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Skills</a></li>
+                    <li><a href="aboutus.html"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Certifications</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                         role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Projects<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+							<li class="dropdown-header">Academic</li>
+                            <li><a href="#">Applied Software Project Management</a></li>
+                            <li><a href="#">Software Verfication and Validation</a></li>
+                            <li><a href="#">Vinnova Online Exam</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Professional</li>
+                            <li><a href="#">User Credits and Membership Level System</a></li>
+							
+                            <li class="dropdown-header">Hobby Projects</li>
+                            <li><a href="#">ConFusion</a></li>
+							<li><a href="#">Chatterbot</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Publications</a></li>
+                </ul>
+				<ul class="nav navbar-nav navbar-right">
+                    <li><a id="login"><span class="glyphicon glyphicon-log-in"></span> Get in Touch</a>
+                    </li>
+                </ul>
+				</div>
+				
+				
+
+				<!-- Main component for a primary marketing message or call to action -->
+				<!-- <header class="jumbotron">
+				<div class="container">
+					{% block jtron %}
+					
+					{% endblock %}
+				</div>
+				</header> -->
+            <!--</div>-->
+</nav>

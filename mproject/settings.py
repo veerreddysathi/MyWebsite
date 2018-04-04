@@ -26,10 +26,7 @@ SECRET_KEY = secret_settings.SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['18.217.77.54',
-    'veerreddy.com',
-    'www.veerreddy.com',
-]
+ALLOWED_HOSTS = ['18.217.77.54', 'veerreddy.com', 'www.veerreddy.com', '127.0.0.1']
 
 
 # Application definition
@@ -41,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+	'veer.apps.VeerConfig',
 ]
 
 MIDDLEWARE = [
@@ -58,7 +56,7 @@ ROOT_URLCONF = 'mproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,10 +79,10 @@ DATABASES = {
     'default': {
         'ENGINE': secret_settings.ENGINE,
         'NAME': secret_settings.NAME,
-	'USER': secret_settings.USER,
-	'PASSWORD': secret_settings.PASSWORD,
-	'HOST': secret_settings.HOST,
-	'PORT': secret_settings.PORT,
+		'USER': secret_settings.USER,
+		'PASSWORD': secret_settings.PASSWORD,
+		'HOST': secret_settings.HOST,
+		'PORT': secret_settings.PORT,
     }
 }
 
@@ -127,3 +125,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles/'), ]

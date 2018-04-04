@@ -1,0 +1,168 @@
+{% extends "base_template.html" %}
+
+{% block title %} Education | {{ block.super }} {% endblock title %}
+
+{% load static %}
+
+{% block content %}
+<style>
+ul {
+	list-style-type: square;
+    list-style-image: url("{% static '/img/arrow.png' %}");
+}
+</style>
+<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="jtron-title">Education</h1>
+					</div>
+				</div>
+			</div>
+</div>
+<div class="container bcrumb content-container">
+	<div class="row">
+            <div class="col-xs-12">
+                <ol class="breadcrumb">
+					<li><a href="/">Home</a></li>
+					<li class="active">Education</li>
+				</ol>
+            </div>
+    </div>
+    <div class="container content-container">
+
+		<div class="row row-content">
+            <div class="media">
+                    <div class="col-xs-12 col-sm-3">
+						<div class="media-left media-middle">
+							<a href="#">
+							<img class="media-object img-thumbnail logos"
+							src="{% static 'img/BTH.jpg' %}" alt="Image Not Available">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<div class="media-body">
+							<h2 class="media-heading"><strong>Master of Science in Software Engineering</strong></h2>
+							<p>I have completed my Masters Degree in Software Engineering at Blekinge Institute of technology, Karlskrona, Blekinge, Sweden.</p>
+						</div>
+						<div class="row">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingMsc">
+										<h3 class="panel-title">
+											<a role="button" data-toggle="collapse" data-parent="#accordion" href="#msc" aria-expanded="true" aria-controls="msc">Courses in my Masters Degree <small>(Click here)</small></a>
+										</h3>
+									</div>
+									<div role="tabpanel" class="panel-collapse collapse" id="msc"    aria-labelledby="headingMsc">
+										<div class="panel-body">
+											<div class="row">
+												<div class="col-xs-12 col-sm-6">
+													<ul>
+														<li>Rsearch Methodology in Software Engineering and Computer Science</li>
+														<li>Advanced Topics in Computing</li>
+														<li>Software Metrics</li>
+														<li>Software Verification and Validation</li>
+													</ul>
+												</div>
+												<div class="col-xs-12 col-sm-6">
+													<ul>
+														<li>Global Software Engineering</li>
+														<li>Advanced Software Project Management</li>
+														<li>Applied Software Project Management</li>
+														<li>Software Quality Management</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<div class="media-left media-middle">
+							<h4 class="durations"><strong>January, 2015 - October, 2016</strong></h4>
+						</div>					
+					</div>
+            </div>
+        </div>
+		<hr/>
+		<div class="row row-content">
+            <div class="row media">
+                    <div class="col-xs-12 col-sm-3">
+						<div class="media-left media-middle">
+							<h4 class="durations"><strong>July, 2011 - October, 2014</strong></h4>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-6">
+						<div class="media-body">
+							<h2 class="media-heading"><strong>Bachelor of Technology in Computer Science and Engineering</strong></h2>
+							<p>I have completed my Bachelors Degree in Computer Science and Engineering at Jawaharlal Nehru Technological University, Kakinada, Andhra Pradesh, India.</p>
+						</div>
+						<div class="row">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingBtech">
+										<h3 class="panel-title">
+											<a role="button" data-toggle="collapse" data-parent="#accordion" href="#btech" aria-expanded="true" aria-controls="btech">Courses in my Bachelors Degree <small>(Click here)</small></a>
+										</h3>
+									</div>
+									<div role="tabpanel" class="panel-collapse collapse" id="btech"    aria-labelledby="headingBtech">
+										<div class="panel-body">
+											<div class="row">
+												<div class="col-xs-12 col-sm-6">
+													<ul>
+														<li>C Programming</li>
+														<li>Data Structures</li>
+														<li>Software Engineering</li>
+														<li>Principles of Programming Languages</li>
+														<li>Data Base Managements Systems</li>
+														<li>Formal Languages and Automata Theory</li>
+														<li>Computer Organisation and Architecture</li>
+														<li>Object Oriented Programming through JAVA</li>
+														<li>Computer Networks</li>
+													</ul>
+												</div>
+												<div class="col-xs-12 col-sm-6">
+													<ul>
+														<li>UNIX Programming</li>
+														<li>Operating Systems</li>
+														<li>Advanced Data Structures</li>
+														<li>Data Communications</li>
+														<li>Advanced Java Programming</li>
+														<li>Design and Analysis of Algorithms</li>
+														<li>Data Warehousing and Data Mining</li>
+														<li>Mobile Computing</li>
+														<li>Web Technologies</li>
+														<li>Cryptography and Network Security</li>
+														<li>UML and Design Patterns</li>
+														<li>Advanced Computer Networks</li>
+														<li>Compiler Design</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<div class="media-right media-middle">
+							<a href="#">
+							<img class="media-object img-thumbnail logos"
+							src="{% static 'img/Jntuk.png' %}" alt="Image Not Available">
+							</a>
+						</div>
+					</div>
+            </div>
+
+			
+        </div>
+		<hr>
+		
+    </div>
+	{% include "snippets/footer.html" %}
+</div>
+{% endblock %}
