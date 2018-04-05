@@ -33,7 +33,7 @@ def certifications(request):
 
 def publications(request):
 	context = {"navbar": "publications"}
-	return render(request, "application/wip.html", context)
+	return render(request, "application/publications.html", context)
 
 
 def contact(request):

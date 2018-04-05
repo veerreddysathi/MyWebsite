@@ -1,0 +1,78 @@
+{% extends "base_template.html" %}
+
+{% block title %} Publications | {{ block.super }} {% endblock title %}
+
+{% load static %}
+
+{% block content %}
+<style>
+ul {
+	list-style-type: square;
+    list-style-image: url("{% static '/img/arrow.png' %}");
+}
+</style>
+<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="jtron-title">Publications</h1>
+					</div>
+				</div>
+			</div>
+</div>
+<div class="container bcrumb content-container">
+	<div class="row">
+            <div class="col-xs-12">
+                <ol class="breadcrumb">
+					<li><a href="/#/">Home</a></li>
+					<li class="active">Publications</li>
+				</ol>
+            </div>
+    </div>
+    <div class="container content-container">
+		<div class="row row-content" id="opr">
+            <div class="media">
+                    <div class="col-xs-12 col-sm-3 col-sm-push-1">
+						<div class="media-left media-middle">
+							<a href="#">
+							<img class="media-object img-thumbnail logos"
+							src="{% static 'img/BTH.jpg' %}" alt="Image Not Available">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-7 col-sm-push-1">
+						<div class="media-body">
+							<h2 class="media-heading"><strong>A Quality Criteria Based Evaluation of Topic Models (Master Thesis)</strong></h2>
+							<h3>Blekinge Institute of Technology, Karlskrona, Sweden</h3>
+							<h4><strong>January, 2016 - October, 2016</strong></h4>
+							<p style="text-align:justify">Our study investigates the possibility of the application of Machine Learning Topic Models for Software test case prioritisation. During the testing phase, in numerous situations, test cases can be so many that executing each and every test case is practically impossible, as there may be many constraints. This causes the testers to prioritise the functions that are to be tested. This is where the ability of topic models can be exploited. Topic models are unsupervised machine learning algorithms that can explore large corpora of data, and classify them by identifying the hidden thematic structure in those corpora. Using topic models for test case prioritisation can save a lot of time and resources. In our study, we provide an overview of the amount of research that has been done in relation to topic models. We uncover various quality criteria, evaluation methods, and metrics that can be used to evaluate the topic models. Furthermore, we also compare the performance of two topic models that are optimised for different quality criteria, on a particular interpretability task, and thereby determine the topic model that produces the best results for that task.</p>
+						</div>
+					</div>
+            </div>
+        </div>
+<hr style="width:50%">
+		<div class="row row-content" id="gaddr">
+            <div class="media">
+                    <div class="col-xs-12 col-sm-3 col-sm-push-1">
+						<div class="media-left media-middle">
+							<a href="#">
+							<img class="media-object img-thumbnail logos"
+							src="{% static 'img/Jntuk.png' %}" alt="Image Not Available">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-7 col-sm-push-1">
+						<div class="media-body">
+							<h2 class="media-heading"><strong>A Trust Based ADHOC On Demand Routing Protocol for MANETs (Bachelor Thesis)</strong></h2>
+							<h3>Jawaharlal Nehru Technological University, Kakinada, India</h3>
+							<h4><strong>July, 2014 - October, 2014</strong></h4>
+							<p style="text-align:justify">This project was a replicative study of the research done by Naveen Kumar Gupta, Kavita Pandey; in which they propose a new routing protocol for MANETs with enhanced performance, and security in terms of data transmission between nodes. In our project, we present the results of  trust based Ad hoc On Demand Routing protocol for MANETs by running simulations of data transmission between several nodes. The algorithm works on the concept of honest value which is calculated on the concept of hop and trust to protect the network from malicious node. The performance of the proposed protocol is analyzed using throughput, number of drop packets, packet delivery ratio and number of received packets with the variation of number of nodes, speed and simulation time. Results showed that the proposed method indeed has a better performance and enhances the security in the network.</p>
+						</div>
+					</div>
+            </div>
+		</div>
+<hr>
+    </div>
+	{% include "snippets/footer.html" %}
+</div>
+{% endblock %}
