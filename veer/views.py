@@ -23,7 +23,7 @@ def experience(request):
 
 def skills(request):
 	context = {"navbar": "skills"}
-	return render(request, "application/skills.html", context)
+	return render(request, "application/wip.html", context)
 
 
 def certifications(request):
