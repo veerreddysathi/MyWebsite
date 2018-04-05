@@ -1,0 +1,73 @@
+{% extends "base_template.html" %}
+
+{% block title %} Skills | {{ block.super }} {% endblock title %}
+
+{% load static %}
+
+{% block content %}
+<style>
+ul {
+	list-style-type: square;
+    list-style-image: url("{% static '/img/arrow.png' %}");
+}
+</style>
+<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="jtron-title">Skills</h1>
+					</div>
+				</div>
+			</div>
+</div>
+<div class="container bcrumb content-container">
+	<div class="row">
+	<div class="col-xs-12 col-sm-9">
+		<div class="row">
+            <div class="col-xs-12">
+                <ol class="breadcrumb">
+					<li><a href="/#/">Home</a></li>
+					<li class="active">Skills</li>
+				</ol>
+            </div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h3>Programming Skills</h3>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<hr>
+			</div>
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<div class="container">
+				<div class="col-xs-3 col-sm-1">
+					<div class="progress vertical">
+						<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%"><span><strong>HTML</strong></span></div>
+						<p>4</p>
+					</div>
+				</div>
+					<div class="progress vertical">
+						<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>  
+					</div>
+					<div class="progress vertical">
+						<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>  
+					</div>
+				</div>
+			</div>
+		<div class="row">
+		</div>
+</div>
+    </div>
+	<!-- introducing the scrollspy with the affix plugin-->
+	<nav class="hidden-xs col-sm-3" id="myScrollspy">
+            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
+                <li><a href="#opr">One Planet Rating (2017-ongoing)</a></li>
+                <li><a href="#gaddr">Gaddr Me (2017)</a></li>
+                <li><a href="#softhouse">Softhouse AB (2016)</a></li>
+            </ul>
+    </nav>
+	
+	</div>
+	{% include "snippets/footer.html" %}
+</div>
+{% endblock %}

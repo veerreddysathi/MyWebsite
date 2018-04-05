@@ -38,8 +38,27 @@ jumbotron > .jtron-title {
 
 .nav-pills > li.active > a {
        background-color: #000000 !important;
-     }
+}
 
 .nav-pills > li > a  {
        color: #000000;
-     }
+}
+
+.container {
+  margin-top: 40px;
+  padding-top: 20px;
+  /*background-color: #beb*/
+}
+.vertical {
+  display: inline-block;
+  width: 150px;
+  height: 40px;
+  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  transform: rotate(-90deg);
+}
+.vertical {
+  box-shadow: inset 0px 4px 6px #ccc;
+}
+.progress-bar {
+  box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
+}
