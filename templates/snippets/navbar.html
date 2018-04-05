@@ -14,8 +14,8 @@
                     <li class="{% if navbar == 'profile' %}active{% endif %}"><a href="/#/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
                     <li class="{% if navbar == 'education' %}active{% endif %}"><a href="/education/"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Education</a></li>
 					<li class="{% if navbar == 'experience' %}active{% endif %}"><a href="/experience/"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Experience</a></li>
-                    <li><a href="aboutus.html"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Skills</a></li>
-                    <li><a href="aboutus.html"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Certifications</a></li>
+                    <li class="{% if navbar == 'skills' %}active{% endif %}"><a href="/skills/"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Skills</a></li>
+                    <li class="{% if navbar == 'certifications' %}active{% endif %}"><a href="/certifications/"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Certifications</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                          role="button" aria-haspopup="true" aria-expanded="false">
@@ -34,10 +34,10 @@
 							<li><a href="#">Chatterbot</a></li>
                         </ul>
                     </li>
-                    <li><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Publications</a></li>
+                    <li><a href="/publications/"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Publications</a></li>
                 </ul>
-				<ul class="nav navbar-nav navbar-right">
-                    <li><a id="login"><span class="glyphicon glyphicon-log-in"></span> Get in Touch</a>
+				<ul class="nav navbar-nav navbar-right login-nav">
+                    <li><a id="contact" href="/contact/"><span class="glyphicon glyphicon-log-in"></span> Get in Touch</a>
                     </li>
                 </ul>
 				</div>

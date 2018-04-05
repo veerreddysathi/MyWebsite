@@ -22,4 +22,8 @@ urlpatterns = [
 	url(r'^$', views.index, name="index"),
 	url(r'^education/', views.education, name="education"),
 	url(r'^experience/', views.experience, name="experience"),
+	url(r'^skills/', views.skills, name="skills"),
+	url(r'^certifications/', views.certifications, name="certifications"),
+	url(r'^publications/', views.publications, name="publications"),
+	url(r'^contact/', views.contact, name="contact"),
 ]

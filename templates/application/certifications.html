@@ -1,0 +1,87 @@
+{% extends "base_template.html" %}
+
+{% block title %} Certifications | {{ block.super }} {% endblock title %}
+
+{% load static %}
+
+{% block content %}
+<style>
+ul {
+	list-style-type: square;
+    list-style-image: url("{% static '/img/arrow.png' %}");
+}
+</style>
+<div class="jumbotron">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="jtron-title">Certifications</h1>
+					</div>
+				</div>
+			</div>
+</div>
+<div class="container bcrumb content-container">
+	<div class="row">
+            <div class="col-xs-12">
+                <ol class="breadcrumb">
+					<li><a href="/#/">Home</a></li>
+					<li class="active">Certifications</li>
+				</ol>
+            </div>
+    </div>
+    <div class="container content-container">
+		<div class="row row-content" id="opr">
+            <div class="media">
+                    <div class="col-xs-12 col-sm-4 col-sm-push-2">
+						<div class="media-left media-middle">
+							<a href="#">
+							<img class="media-object img-thumbnail logos"
+							src="{% static 'img/cera.png' %}" alt="Image Not Available">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-sm-push-1">
+						<div class="media-body">
+							<h2 class="media-heading"><strong>Front-End Web UI Frameworks and Tools</strong></h2>
+							<h3>Coursera</h3>
+							<h4><strong>November, 2016</strong></h4>
+							<p><strong>Through the Front-End Web UI Frameworks and Tools certification:</strong></p>
+							<ul>
+								<li>I have gained knowledge in the Front-End Web Development framework <strong>Bootstrap</strong>, which made it possible to develop this website</li>
+							</ul>
+						</div>
+					</div>
+            </div>
+        </div>
+<hr style="width:50%">
+		<div class="row row-content" id="gaddr">
+            <div class="media">
+                    <div class="col-xs-12 col-sm-4 col-sm-push-2">
+						<div class="media-left media-middle">
+							<a href="#">
+							<img class="media-object img-thumbnail logos"
+							src="{% static 'img/sas.png' %}" alt="Image Not Available">
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-5 col-sm-push-1">
+						<div class="media-body">
+							<h2 class="media-heading"><strong>SAS Analyst</strong></h2>
+							<h3>Web Drills</h3>
+							<h4><strong>July, 2017 - October, 2017</strong></h4>
+							<p><strong>Through the SAS Analyst certification program, I have gained knowledge in:</strong></p>
+							<ul>
+								<li>Working in SAS Environment along with Windows- Editor, Output , Log, project window</li>
+								<li> Import various type of data sets like Text files (.txt, .csv), Excel files (.xls) Etc. using SAS codes and perform data manipulation</li>
+								<li>Creation of Permanent and temporary Datasets, and generate reports, tables using SQL queries</li>
+								<li>Perform Statistical analysis on datasets and predict trends</li>
+							</ul>
+						</div>
+					</div>
+            </div>
+		</div>
+<hr>
+    </div>
+	{% include "snippets/footer.html" %}
+</div>
+{% endblock %}
