@@ -4,13 +4,7 @@
 
 {% load static %}
 
-{% block content %}
-<style>
-ul {
-	list-style-type: square;
-    list-style-image: url("{% static '/img/arrow.png' %}");
-}
-</style>
+{% block jtron %}
 <div class="jumbotron">
 			<div class="container">
 				<div class="row">
@@ -20,6 +14,15 @@ ul {
 				</div>
 			</div>
 </div>
+{% endblock %}
+
+{% block content %}
+<style>
+ul {
+	list-style-type: square;
+    list-style-image: url("{% static '/img/arrow.png' %}");
+}
+</style>
 <div class="container bcrumb content-container">
 	<div class="row">
             <div class="col-xs-12">
@@ -30,8 +33,8 @@ ul {
             </div>
     </div>
     <div class="container content-container">
-		<div class="row row-content" id="opr">
-            <div class="media">
+		<div class="row row-content">
+            <div class="media"  style="padding-top:20px;">
                     <div class="col-xs-12 col-sm-4 col-sm-push-2">
 						<div class="media-left media-middle">
 							<a href="#">
@@ -54,9 +57,9 @@ ul {
             </div>
         </div>
 <hr style="width:50%">
-		<div class="row row-content" id="gaddr">
-            <div class="media">
-                    <div class="col-xs-12 col-sm-4 col-sm-push-2">
+		<div class="row row-content">
+            <div class="media" style="padding-top:20px;">
+                    <div class="col-xs-12 col-sm-4 col-sm-push-2 col1">
 						<div class="media-left media-middle">
 							<a href="#">
 							<img class="media-object img-thumbnail logos"
@@ -64,7 +67,7 @@ ul {
 							</a>
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-5 col-sm-push-1">
+					<div class="col-xs-12 col-sm-5 col-sm-push-1 col2">
 						<div class="media-body">
 							<h2 class="media-heading"><strong>SAS Analyst</strong></h2>
 							<h3>Web Drills</h3>

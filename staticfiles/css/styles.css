@@ -2,6 +2,18 @@ body{
 	background-color: #000000;
 }
 
+@media (max-width: 767px) {
+
+  .media > .col-xs-12 > img {
+	  margin-bottom: 10px;
+  }
+  
+  .media > .media-body > .media-heading {
+    padding-top: 20px;
+	margin-bottom: 10px;
+  } 
+}
+
 .login-nav {
 	padding-left: 20px;
 }
@@ -9,11 +21,6 @@ body{
 .logos {
 	width: 200px;
 	height: 200px;
-}
-
-.durations {
-	padding-top: 60px;
-	color: #FF611A;
 }
 
 .content-container {
@@ -49,16 +56,4 @@ jumbotron > .jtron-title {
   padding-top: 20px;
   /*background-color: #beb*/
 }
-.vertical {
-  display: inline-block;
-  width: 150px;
-  height: 40px;
-  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-  transform: rotate(-90deg);
-}
-.vertical {
-  box-shadow: inset 0px 4px 6px #ccc;
-}
-.progress-bar {
-  box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
-}
+
