@@ -4,13 +4,7 @@
 
 {% load static %}
 
-{% block content %}
-<style>
-ul {
-	list-style-type: square;
-    list-style-image: url("{% static '/img/arrow.png' %}");
-}
-</style>
+{% block jtron %}
 <div class="jumbotron">
 			<div class="container">
 				<div class="row">
@@ -20,6 +14,17 @@ ul {
 				</div>
 			</div>
 </div>
+{% endblock %}
+
+{% block content %}
+
+<style>
+ul {
+	list-style-type: square;
+    list-style-image: url("{% static '/img/arrow.png' %}");
+}
+</style>
+
 <div class="container bcrumb content-container">
 	<div class="row">
 	<div class="col-xs-12 col-sm-9">
@@ -31,39 +36,262 @@ ul {
 				</ol>
             </div>
 		</div>
-		<div class="row">
+		<div class="row" id="languages">
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<h3>Programming Skills</h3>
+				<h2>Programming Languages</h2>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<hr>
 			</div>
-			<div class="col-xs-12 col-md-12 col-sm-12">
-				<div class="container">
-				<div class="col-xs-3 col-sm-1">
-					<div class="progress vertical">
-						<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%"><span><strong>HTML</strong></span></div>
-						<p>4</p>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						<span class="skill">
+							<strong>HTML</strong>
+						</span>
 					</div>
-				</div>
-					<div class="progress vertical">
-						<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">95%</div>  
-					</div>
-					<div class="progress vertical">
-						<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div>  
-					</div>
+					<i class="val">8</i>
 				</div>
 			</div>
-		<div class="row">
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+						<span class="skill">
+							<strong>CSS</strong>
+						</span>
+					</div>  
+					<i class="val">7</i>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:65%;">
+						<span class="skill">
+							<strong>Python</strong>
+						</span>
+					</div>  
+					<i class="val">6.5</i>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+						<span class="skill">
+							<strong>Java Script</strong>
+						</span>
+					</div>  
+					<i class="val">6</i>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+						<span class="skill">
+							<strong>Java</strong>
+						</span>
+					</div>  
+					<i class="val">6</i>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+						<span class="skill">
+							<strong>C</strong>
+						</span>
+					</div>  
+					<i class="val">5.5</i>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:55%;">
+						<span class="skill">
+							<strong>SQL</strong>
+						</span>
+					</div>  
+					<i class="val">5.5</i>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<hr>
+			</div>
 		</div>
-</div>
+		<div class="row" id="frameworks">
+			<div class="col-xs-12 col-sm-12 col-md-12" id="languages">
+				<h2>Development Frameworks</h2>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<hr>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+						<span class="skill">
+							<strong>Bootstrap</strong>
+						</span>
+					</div>
+					<i class="val">7</i>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
+						<span class="skill">
+							<strong>Django</strong>
+						</span>
+					</div>  
+					<i class="val">7</i>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+						<span class="skill">
+							<strong>jQuery</strong>
+						</span>
+					</div>  
+					<i class="val">6</i>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+						<span class="skill">
+							<strong>Angular JS</strong>
+						</span>
+					</div>  
+					<i class="val">6</i>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6">
+				<div class="progress">
+					<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:50%;">
+						<span class="skill">
+							<strong>React</strong>
+						</span>
+					</div>  
+					<i class="val">5</i>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<hr>
+			</div>
+		</div>
+		<div class="row" id="tools">
+			<div class="col-xs-12 col-sm-12 col-md-12" id="languages">
+				<h2>Productivity Tools</h2>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<hr>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h4><strong>Version Control Systems</strong></h4>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="media">
+					<img class="media-object vcs-logos" src="{% static '/img/git-hub.png' %}">
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="media">
+					<img class="media-object vcs-logos bit-bucket" src="{% static '/img/bitbucket.png' %}">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<hr>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h4><strong>Integrated Development Environments (IDEs)</strong></h4>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4">
+				<div class="media ide">
+					<img class="media-object ide-logos" src="{% static '/img/PyCharm.png' %}">
+					<p><strong>PyCharm</strong></p>
+				</div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4">
+				<div class="media ide">
+					<img class="media-object ide-logos" src="{% static '/img/webstorm.png' %}">
+					<p><strong>Webstorm</strong></p>
+				</div>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4">
+				<div class="media ide">
+					<img class="media-object ide-logos" src="{% static '/img/eclipse.png' %}">
+					<p><strong>Eclipse</strong></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<hr>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h4><strong>Other Tools</strong></h4>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="media other-tools">
+					<img class="media-object office" src="{% static '/img/office.jpg' %}">
+					<p><strong>Microsoft Office</strong></p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="media other-tools">
+					<img class="media-object photoshop" src="{% static '/img/photoshop.jpg' %}">
+					<p><strong>Adobe Photoshop</strong></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<hr>
+			</div>
+		</div>
+		<div class="row" id="os">
+			<div class="col-xs-12 col-sm-12 col-md-12" id="languages">
+				<h2>Operating Systems</h2>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="media os">
+					<img class="media-object os-logos-windows" src="{% static '/img/windows.png' %}">
+					<p><strong>Windows</strong></p>
+				</div>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="media os">
+					<img class="media-object os-logos" src="{% static '/img/ubuntu.png' %}">
+					<p><strong>Ubuntu</strong></p>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<hr>
+			</div>
+		</div>
+		<div class="row" id="otherskills">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h2>Other Skills</h2>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6 list">
+				<ul>
+					<li>A Good Eye for Visual Aesthetics</li>
+					<li>Audio and Video Editing</li>
+				</ul>
+			</div>
+			<div class="col-xs-6 col-sm-6 col-md-6 list">
+				<ul>
+					<li>Debugging</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<hr>
+			</div>
+		</div>
     </div>
 	<!-- introducing the scrollspy with the affix plugin-->
 	<nav class="hidden-xs col-sm-3" id="myScrollspy">
             <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="200">
-                <li><a href="#opr">One Planet Rating (2017-ongoing)</a></li>
-                <li><a href="#gaddr">Gaddr Me (2017)</a></li>
-                <li><a href="#softhouse">Softhouse AB (2016)</a></li>
+                <li><a href="#languages">Programming Languages</a></li>
+                <li><a href="#frameworks">Development Frameworks</a></li>
+                <li><a href="#tools">Productivity Tools</a></li>
+                <li><a href="#os">Operating Systems</a></li>
+                <li><a href="#otherskills">Other Skills</a></li>
             </ul>
     </nav>
 	

@@ -57,3 +57,37 @@ jumbotron > .jtron-title {
   /*background-color: #beb*/
 }
 
+/* progress bar styles for skills page */
+
+.progress {
+	height: 35px;
+}
+
+.progress > .progress-bar > .skill {
+	padding-top: 25px;
+}
+
+/* skills page CSS */
+.vcs-logos {
+	width: 100%;
+	height: 30%;
+}
+
+.bit-bucket {
+	padding-top: 10%;
+}
+
+.ide-logos {
+	width: 90%;
+}
+
+.ide > p, .os > p, .other-tools > p {
+	text-align: center;
+}
+
+.os > img, .other-tools > img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 60%;
+}
