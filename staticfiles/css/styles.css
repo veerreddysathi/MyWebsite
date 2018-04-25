@@ -58,7 +58,13 @@ body, html {
   .media > .media-body > .media-heading {
     padding-top: 20px;
 	margin-bottom: 10px;
-  } 
+  }
+  
+  .personality {
+	  height: 100%;
+	  padding-top: 30%;
+	  background-color: #000000;
+  }
 }
 
 .login-nav {
