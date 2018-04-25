@@ -11,6 +11,11 @@ def index(request):
     return render(request, "application/index.html", context)
 
 
+def home(request):
+    context = {"navbar": "home"}
+    return render(request, "application/wip.html", context)
+
+	
 def education(request):
 	context = {"navbar": "education"}
 	return render(request, "application/education.html", context)

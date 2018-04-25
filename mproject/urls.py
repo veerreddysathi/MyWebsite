@@ -20,6 +20,7 @@ from veer import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^$', views.index, name="index"),
+	url(r'^home/', views.home, name="home"),
 	url(r'^education/', views.education, name="education"),
 	url(r'^experience/', views.experience, name="experience"),
 	url(r'^skills/', views.skills, name="skills"),

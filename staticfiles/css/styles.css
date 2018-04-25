@@ -1,5 +1,52 @@
 body{
 	background-color: #000000;
+	position: relative;
+}
+
+body, html {
+	height: 100%;
+}
+
+.parallax {
+    /* The image used */
+	background-image: url("/static/img/veer.jpg");
+
+    /* Full height */
+    height: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro {
+	background-color: #000000;
+}
+
+.knowmore {
+	padding-top: 15%;
+}
+
+#content1 {
+	color: #FFFFFF;
+}
+
+.personality {
+	height: 100%;
+	padding-top: 5%
+}
+
+.personality-heading {
+	text-align: center;
+}
+
+.personality-image {
+	width: 100%;
+	height: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media (max-width: 767px) {
