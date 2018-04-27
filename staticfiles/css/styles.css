@@ -3,6 +3,10 @@ body{
 	position: relative;
 }
 
+.row-width-fix {
+	width: 100%;
+}
+
 body, html {
 	height: 100%;
 }
@@ -26,6 +30,7 @@ body, html {
 
 .knowmore {
 	padding-top: 15%;
+	padding-right: 1%;
 }
 
 #content1 {
@@ -67,10 +72,6 @@ body, html {
   }
 }
 
-.login-nav {
-	padding-left: 20px;
-}
-
 .logos {
 	width: 200px;
 	height: 200px;
@@ -102,6 +103,10 @@ jumbotron > .jtron-title {
 
 .nav-pills > li > a  {
        color: #000000;
+}
+
+.login-nav {
+	padding-right: 1%;
 }
 
 .container {
